@@ -28,7 +28,7 @@ const VIDEOS = [
 ];
 
 let videoIndex = 0;
-const nextVideo = () => VIDEOS[videoIndex++ % VIDEOS.length];
+const nextVideo = (): string => VIDEOS[videoIndex++ % VIDEOS.length]!;
 
 export const lessons: Lesson[] = [
   // Aulas Compradas
